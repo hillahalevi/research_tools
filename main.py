@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     print(f"Percentage: {unnamed_percentage * 100}%{SEPARATOR_STYLE}")
 
-    gUser = df.groupby('original_username')["user"].count().reset_index(name="count")
+    gUser = df.groupby('original_username')["user"].count().sort_values(ascending=False).reset_index(name="count")
     print(f"Count rows for every user:\n{gUser}")
 
     plt.hist(gUser["original_username"], weights=gUser["count"], bins=30)
