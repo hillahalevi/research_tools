@@ -7,6 +7,7 @@
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     import pandas as pd
+    import seaborn as sns
     import matplotlib.pyplot as plt
     import seaborn as sns
 
